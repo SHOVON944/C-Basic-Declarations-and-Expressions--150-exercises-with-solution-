@@ -7,13 +7,14 @@ int main()
     printf("Enter the 5 digit number: ");
     scanf("%d",&number);
     main_number = number;
+    int reserve = number;
     while(number!=0){
         mod_formula = number%10;
         mathformula = mathformula*10 + mod_formula;
         number = number/10; 
     }
     if(main_number == mathformula){
-        printf("%d is a palindrom number.",number);
+        printf("%d is a palindrom number.",reserve);
     } else{
         printf("%d is not a palindrom number.",main_number);
     }
